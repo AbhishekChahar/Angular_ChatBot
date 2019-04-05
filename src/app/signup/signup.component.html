@@ -1,3 +1,26 @@
-<p>
-  signup works!
-</p>
+<div class="container">
+  <h2>Registration Page</h2>
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="name" class="form-control" name="name" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+      <label for="username">Email address</label>
+      <input type="email" class="form-control" name="username" id="username" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <label for="verifypassword">Verify Password</label>
+        <input type="verifypassword" class="form-control" name="verifypassword" id="verifypassword" placeholder="verify Password">
+      </div>
+
+    <button type="button" class="btn btn-primary">Submit</button>
+  </form>
+  <br>
+  <h4><a routerlink='signup'>Already have an account? Login</a></h4>
+</div>
+
