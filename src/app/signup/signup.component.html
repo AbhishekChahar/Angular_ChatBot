@@ -3,22 +3,22 @@
   <form>
     <div class="form-group">
       <label for="name">Name</label>
-      <input type="name" class="form-control" name="name" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+      <input type="name" class="form-control" name="name" id="name" aria-describedby="nameHelp" placeholder="Enter name" #name>
     </div>
     <div class="form-group">
       <label for="username">Email address</label>
-      <input type="email" class="form-control" name="username" id="username" aria-describedby="emailHelp" placeholder="Enter email">
+      <input type="email" class="form-control" name="username" id="username" aria-describedby="emailHelp" placeholder="Enter email" #email>
     </div>
     <div class="form-group">
       <label for="password">Password</label>
-      <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+      <input type="password" class="form-control" name="password" id="password" placeholder="Password" #password>
     </div>
     <div class="form-group">
         <label for="verifypassword">Verify Password</label>
-        <input type="verifypassword" class="form-control" name="verifypassword" id="verifypassword" placeholder="verify Password">
+        <input type="verifypassword" class="form-control" name="verifypassword" id="verifypassword" placeholder="verify Password" #verifypassword>
       </div>
 
-    <button type="button" class="btn btn-primary">Submit</button>
+    <button type="button" class="btn btn-primary" (click)="signup(name,email,password,verifypassword)">Submit</button>
   </form>
   <br>
   <h4>Already have an account? <a routerLink="">Login</a></h4>
